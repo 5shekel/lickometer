@@ -120,10 +120,11 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="45.39" y2="0" width="0" layer="20"/>
-<wire x1="45.39" y1="0" x2="45.39" y2="45.71" width="0" layer="20"/>
-<wire x1="45.39" y1="45.71" x2="0" y2="45.71" width="0" layer="20"/>
-<wire x1="0" y1="45.71" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="37.77" y2="0" width="0" layer="20"/>
+<wire x1="37.77" y1="0" x2="37.77" y2="31.74" width="0" layer="20"/>
+<wire x1="37.77" y1="31.74" x2="0" y2="31.74" width="0" layer="20"/>
+<wire x1="0" y1="31.74" x2="0" y2="0" width="0" layer="20"/>
+<text x="17.78" y="25.4" size="0.8128" layer="21">BUZZER</text>
 </plain>
 <libraries>
 <library name="microbuilder">
@@ -150,23 +151,6 @@
 </library>
 <library name="adafruit">
 <packages>
-<package name="LED5MM">
-<description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
-5 mm, round</description>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.254" layer="21" curve="-286.260205" cap="flat"/>
-<wire x1="-1.143" y1="0" x2="0" y2="1.143" width="0.1524" layer="51" curve="-90" cap="flat"/>
-<wire x1="0" y1="-1.143" x2="1.143" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
-<wire x1="-1.651" y1="0" x2="0" y2="1.651" width="0.1524" layer="51" curve="-90" cap="flat"/>
-<wire x1="0" y1="-1.651" x2="1.651" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
-<wire x1="-2.159" y1="0" x2="0" y2="2.159" width="0.1524" layer="51" curve="-90" cap="flat"/>
-<wire x1="0" y1="-2.159" x2="2.159" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
-<circle x="0" y="0" radius="2.54" width="0.1524" layer="21"/>
-<pad name="A" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="K" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<text x="3.175" y="0.5334" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="3.2004" y="-1.8034" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 <package name="TO92-EBC-OVAL">
 <description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
 grid 5.08 mm</description>
@@ -218,6 +202,38 @@ http://dangerousprototypes.com</description>
 <text x="-3.175" y="-2.8575" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <rectangle x1="3.175" y1="-0.3048" x2="4.0386" y2="0.3048" layer="21"/>
 <rectangle x1="-4.0386" y1="-0.3048" x2="-3.175" y2="0.3048" layer="21"/>
+</package>
+</packages>
+</library>
+<library name="SparkFun-Electromechanical">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find anything that moves- switches, relays, buttons, potentiometers. Also, anything that goes on a board but isn't electrical in nature- screws, standoffs, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="BUZZER-CCV-KIT">
+<description>&lt;h3&gt;BUZZER-CCV-KIT&lt;/h3&gt;
+SMD Buzzer&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of this package. This package has longer pads to aid in hand soldering.</description>
+<wire x1="2.6" y1="-6" x2="-2.6" y2="-6" width="0.127" layer="51"/>
+<wire x1="2.6" y1="-6" x2="2.6" y2="-3.7" width="0.127" layer="51"/>
+<wire x1="-2.6" y1="-6" x2="-2.6" y2="-3.7" width="0.127" layer="51"/>
+<wire x1="-4.2" y1="1.6" x2="1.27" y2="4.318" width="0.2032" layer="21" curve="-86.141052"/>
+<wire x1="3.048" y1="3.302" x2="4.191" y2="1.651" width="0.2032" layer="21" curve="-25.69541"/>
+<wire x1="4.2" y1="-1.6" x2="2.6" y2="-3.7" width="0.2032" layer="21" curve="-31.605028"/>
+<wire x1="-3.302" y1="-3.048" x2="-2.6" y2="-3.6" width="0.2032" layer="21" curve="12.917633"/>
+<wire x1="-2.6" y1="-6" x2="2.6" y2="-6" width="0.2032" layer="21"/>
+<wire x1="2.6" y1="-6" x2="2.6" y2="-3.7" width="0.2032" layer="21"/>
+<wire x1="-2.6" y1="-6" x2="-2.6" y2="-3.6" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="4.5" width="0.127" layer="51"/>
+<smd name="-" x="-4.15" y="0" dx="3.5" dy="2" layer="1"/>
+<smd name="+" x="4.15" y="0" dx="3.5" dy="2" layer="1"/>
+<rectangle x1="-5.2" y1="-0.75" x2="-2.9" y2="0.75" layer="51"/>
+<rectangle x1="2.9" y1="-0.75" x2="5.2" y2="0.75" layer="51" rot="R180"/>
+<hole x="-3.9" y="-2.25" drill="0.8"/>
+<hole x="2.25" y="3.9" drill="0.8"/>
 </package>
 </packages>
 </library>
@@ -404,74 +420,68 @@ design rules under a new name.
 </pass>
 </autorouter>
 <elements>
-<element name="JP1" library="microbuilder" package="1X01_OVAL" value="probe_a" x="3.81" y="13.97"/>
-<element name="JP2" library="microbuilder" package="1X01_OVAL" value="probe_b" x="3.81" y="25.4"/>
-<element name="JP3" library="microbuilder" package="1X01_OVAL" value="gnd" x="3.81" y="6.35" rot="R180"/>
-<element name="JP4" library="microbuilder" package="1X01_OVAL" value="vcc" x="3.81" y="33.02"/>
-<element name="LED1" library="adafruit" package="LED5MM" value="" x="33.02" y="31.75" smashed="yes" rot="R270">
-<attribute name="NAME" x="38.1" y="28.6766" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="VALUE" x="31.2166" y="28.5496" size="1.27" layer="27" ratio="10" rot="R270"/>
+<element name="JP1" library="microbuilder" package="1X01_OVAL" value="probe_a" x="2.54" y="8.89" smashed="yes">
+<attribute name="VALUE" x="1.27" y="10.795" size="0.8128" layer="27" ratio="10"/>
 </element>
-<element name="R1" library="dp_devices" package="RTH025W" value="10M" x="12.7" y="12.7" rot="R90"/>
-<element name="R2" library="dp_devices" package="RTH025W" value="220" x="22.86" y="33.02" smashed="yes" rot="R180">
-<attribute name="NAME" x="25.908" y="31.496" size="1.27" layer="25" font="vector" ratio="10" rot="R180"/>
-<attribute name="VALUE" x="22.225" y="35.8775" size="1.27" layer="27" font="vector" ratio="10" rot="R180"/>
+<element name="JP2" library="microbuilder" package="1X01_OVAL" value="probe_b" x="2.54" y="20.32" smashed="yes">
+<attribute name="VALUE" x="5.715" y="18.415" size="0.8128" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="R3" library="dp_devices" package="RTH025W" value="1k" x="12.7" y="25.4" rot="R90"/>
-<element name="T1" library="adafruit" package="TO92-EBC-OVAL" value="2N2222" x="20.32" y="17.78" smashed="yes" rot="R90">
-<attribute name="VALUE" x="25.4" y="14.097" size="1.27" layer="27" ratio="10" rot="R180"/>
+<element name="JP3" library="microbuilder" package="1X01_OVAL" value="gnd" x="2.54" y="2.54" smashed="yes" rot="R180">
+<attribute name="VALUE" x="3.81" y="5.08" size="0.8128" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="T2" library="adafruit" package="TO92-EBC-OVAL" value="2N2222" x="31.75" y="15.24" rot="R90"/>
+<element name="JP4" library="microbuilder" package="1X01_OVAL" value="vcc" x="2.54" y="27.94" smashed="yes">
+<attribute name="VALUE" x="3.81" y="26.67" size="0.8128" layer="27" ratio="10"/>
+</element>
+<element name="R1" library="dp_devices" package="RTH025W" value="10M" x="11.43" y="7.62" rot="R90"/>
+<element name="R3" library="dp_devices" package="RTH025W" value="1k" x="11.43" y="20.32" rot="R90"/>
+<element name="T1" library="adafruit" package="TO92-EBC-OVAL" value="2N2222" x="19.05" y="12.7" rot="R90"/>
+<element name="T2" library="adafruit" package="TO92-EBC-OVAL" value="2N2222" x="30.48" y="10.16" rot="R90"/>
+<element name="BUZZER" library="SparkFun-Electromechanical" package="BUZZER-CCV-KIT" value="BUZZERSMD2-KIT" x="20.32" y="24.13" rot="R90"/>
 </elements>
 <signals>
 <signal name="VCC">
 <contactref element="R3" pad="2"/>
-<contactref element="R2" pad="2"/>
 <contactref element="JP4" pad="1"/>
-<wire x1="3.81" y1="33.02" x2="17.78" y2="33.02" width="0.8128" layer="1"/>
-<wire x1="17.78" y1="33.02" x2="12.7" y2="33.02" width="0.8128" layer="1"/>
-<wire x1="12.7" y1="33.02" x2="12.7" y2="30.48" width="0.8128" layer="1"/>
-</signal>
-<signal name="N$1">
-<contactref element="LED1" pad="A"/>
-<contactref element="R2" pad="1"/>
-<wire x1="33.02" y1="33.02" x2="27.94" y2="33.02" width="0.8128" layer="1"/>
+<contactref element="BUZZER" pad="+"/>
+<wire x1="2.54" y1="27.94" x2="11.43" y2="27.94" width="0.8128" layer="1"/>
+<wire x1="11.43" y1="27.94" x2="11.43" y2="25.4" width="0.8128" layer="1"/>
+<wire x1="11.43" y1="27.94" x2="20.32" y2="27.94" width="0.8128" layer="1"/>
+<wire x1="20.32" y1="27.94" x2="20.32" y2="28.28" width="0.8128" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="JP3" pad="1"/>
 <contactref element="T2" pad="E"/>
 <contactref element="R1" pad="1"/>
-<wire x1="12.7" y1="7.62" x2="33.02" y2="7.62" width="0.8128" layer="1"/>
-<wire x1="33.02" y1="7.62" x2="33.02" y2="12.7" width="0.8128" layer="1"/>
-<wire x1="12.7" y1="7.62" x2="12.7" y2="6.35" width="0.8128" layer="1"/>
-<wire x1="12.7" y1="6.35" x2="3.81" y2="6.35" width="0.8128" layer="1"/>
+<wire x1="11.43" y1="2.54" x2="31.75" y2="2.54" width="0.8128" layer="1"/>
+<wire x1="31.75" y1="2.54" x2="31.75" y2="7.62" width="0.8128" layer="1"/>
+<wire x1="2.54" y1="2.54" x2="11.43" y2="2.54" width="0.8128" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="R3" pad="1"/>
 <contactref element="JP2" pad="1"/>
-<wire x1="12.7" y1="20.32" x2="3.81" y2="20.32" width="0.8128" layer="1"/>
-<wire x1="3.81" y1="20.32" x2="3.81" y2="25.4" width="0.8128" layer="1"/>
+<wire x1="11.43" y1="15.24" x2="2.54" y2="15.24" width="0.8128" layer="1"/>
+<wire x1="2.54" y1="15.24" x2="2.54" y2="20.32" width="0.8128" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="T1" pad="B"/>
 <contactref element="JP1" pad="1"/>
 <contactref element="R1" pad="2"/>
-<wire x1="12.7" y1="17.78" x2="21.59" y2="17.78" width="0.8128" layer="1"/>
-<wire x1="3.81" y1="13.97" x2="3.81" y2="17.78" width="0.8128" layer="1"/>
-<wire x1="3.81" y1="17.78" x2="12.7" y2="17.78" width="0.8128" layer="1"/>
+<wire x1="11.43" y1="12.7" x2="20.32" y2="12.7" width="0.8128" layer="1"/>
+<wire x1="2.54" y1="8.89" x2="2.54" y2="12.7" width="0.8128" layer="1"/>
+<wire x1="2.54" y1="12.7" x2="11.43" y2="12.7" width="0.8128" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="T2" pad="C"/>
-<contactref element="LED1" pad="K"/>
 <contactref element="T1" pad="C"/>
-<wire x1="21.59" y1="20.32" x2="33.02" y2="20.32" width="0.8128" layer="1"/>
-<wire x1="33.02" y1="20.32" x2="33.02" y2="17.78" width="0.8128" layer="1"/>
-<wire x1="33.02" y1="17.78" x2="33.02" y2="30.48" width="0.8128" layer="1"/>
+<wire x1="20.32" y1="15.24" x2="31.75" y2="15.24" width="0.8128" layer="1"/>
+<wire x1="31.75" y1="15.24" x2="31.75" y2="12.7" width="0.8128" layer="1"/>
+<contactref element="BUZZER" pad="-"/>
+<wire x1="20.32" y1="19.98" x2="20.32" y2="15.24" width="0.8128" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="T1" pad="E"/>
 <contactref element="T2" pad="B"/>
-<wire x1="33.02" y1="15.24" x2="21.59" y2="15.24" width="0.8128" layer="1"/>
+<wire x1="31.75" y1="10.16" x2="20.32" y2="10.16" width="0.8128" layer="1"/>
 </signal>
 </signals>
 </board>
