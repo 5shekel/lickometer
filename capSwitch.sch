@@ -1697,7 +1697,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 </classes>
 <parts>
 <part name="T1" library="adafruit" deviceset="2N2222" device=""/>
-<part name="R1" library="dp_devices" deviceset="RESISTOR" device="-PTH-0.4" value="100k"/>
+<part name="R1" library="dp_devices" deviceset="RESISTOR" device="-PTH-0.4" value="10M"/>
 <part name="R2" library="dp_devices" deviceset="RESISTOR" device="-PTH-0.4" value="220"/>
 <part name="R3" library="dp_devices" deviceset="RESISTOR" device="-PTH-0.4" value="1k"/>
 <part name="JP1" library="microbuilder" deviceset="HEADER-1X1" device="" value="probe_a"/>
